@@ -128,7 +128,7 @@ class GoogleChatDirectoryLoader:
 
         - Media files and message attachments are not processed, in-text URLs will just be processed as natural language.
 
-        Example usage -> simply loop over the returned list:
+        Example usage -> call load method, then simply loop over the returned list:
 
         for item in list:
             rag_pipeline.run(text=item['text'], metadata=item['metadata'])
